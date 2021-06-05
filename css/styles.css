@@ -55,7 +55,9 @@ ol {
   display: block;
 }
 /* heder */
-
+.nav-link{
+  transition: color 250ms linear;
+}
 .icon-heder {
   fill: #afb1b8;
   margin-right: 10px;
@@ -73,6 +75,7 @@ ol {
 .header-links {
   padding-top: 10px;
   padding-bottom: 10px;
+  transition: color 250ms linear;
 }
 .men .menu-item:not(:last-child) {
   margin-right: 50px;
@@ -103,6 +106,7 @@ nav {
 .menu-list {
   display: flex;
   align-items: center;
+  transition: color 250ms linear;
 }
 .lin {
   color: var(--logo-color);
@@ -213,6 +217,7 @@ nav {
   letter-spacing: 0.06em;
   color: var(--adress-color);
   background-color: #2196f3;
+  transition: color 250ms linear, background 250ms linear;
 }
 .button:focus,
 .button:hover {
@@ -276,6 +281,7 @@ nav {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+  transform: fill 250ms linear;
 }
 .mini-list {
   display: flex;
@@ -292,6 +298,8 @@ nav {
   justify-content: center;
   display: flex;
   align-items: center;
+  transition: background-color 250ms linear;
+ 
 }
 .mini-link:hover .icon {
   fill: var(--adress-color);
@@ -302,6 +310,7 @@ nav {
   justify-content: center;
   display: flex;
   align-items: center;
+
 }
 .mini-link:hover {
   background-color: var(--logo-color);
@@ -420,6 +429,27 @@ nav {
   margin-top: -30px;
   margin-left: -30px;
 }
+.box-list{position: relative;}
+.work-examples-text{
+  width: 370px;
+height: 70px;
+background: rgba(47, 48, 58, 0.8);
+position: absolute;
+bottom: 0;
+right: 0;
+color: #ffffff;
+padding-top: 27px;
+padding-right: 82px;
+padding-bottom: 27px;
+padding-left: 82px;
+
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
 
 /*onteiner-work-examples*/
 
@@ -457,6 +487,7 @@ nav {
   align-items: center;
   width: 170px;
   height: 92px;
+  transition: color 250ms linear, fill 250ms linear, border-color 250ms linear  ;
 }
 
 .clients-list:not(:last-child) {
@@ -498,6 +529,7 @@ h4 {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  transition: color 250ms linear;
 }
 .google-adres {
   color: var(--adress-color);
@@ -539,12 +571,14 @@ h4 {
   display: flex;
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
+  transition: color 250ms linear,  background-color 250ms linear;
 }
 
 .icon-footer {
   width: 20px;
   height: 20px;
   fill: #ffffff;
+  
 }
 .mini-link-footer:hover,
 .mini-link-footer:focus {
@@ -592,6 +626,7 @@ h4 {
   color: var(--title-color);
   border: none;
   background-color: #f5f4fa;
+  transition: color 250ms linear, background 250ms linear ;
 }
 
 .nav-button:focus,
@@ -659,4 +694,44 @@ h4 {
 .port-img-link:hover .img-text,
 .port-img-link:focus .img-text {
   transform: translateX(0%);
+}
+
+/*back-drop*/
+
+.back-drop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.modal{
+  width: 528px;
+height: 581px;
+background-color: #ffffff;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);}
+.modal-close{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+background: rgba(0, 0, 0, 0); 
+border: 1px solid rgba(0, 0, 0, 0.1);
+cursor: pointer;
+}
+
+.modal-close:hover{box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);}
+.is-hidden{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
