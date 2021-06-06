@@ -468,6 +468,7 @@ text-transform: uppercase;
 /* clients-section*/
 .clients-icon {
   fill: #afb1b8;
+  transition:  fill 250ms linear;
 }
 
 .clients-section {
