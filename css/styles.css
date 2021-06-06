@@ -68,26 +68,25 @@ bottom: 0;
 }
 
 .nav-link{
-  transition: color 250ms linear;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-heder {
-  fill: #afb1b8;
+  fill: currentColor;
   margin-right: 10px;
 }
-.header-links:hover .icon-heder {
-  fill: #2196f3;
-}
+
+
 .header {
   border-bottom: 1px solid #ececec;
 }
 .nav-link {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-links {
   padding-top: 10px;
   padding-bottom: 10px;
-  transition: color 250ms linear;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .men .menu-item:not(:last-child) {
   margin-right: 50px;
@@ -118,7 +117,7 @@ nav {
 .menu-list {
   display: flex;
   align-items: center;
-  transition: color 250ms linear;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .lin {
   color: var(--logo-color);
@@ -186,7 +185,7 @@ nav {
   color: var(--logo-color);
 }
 .title-section {
-  max-width: 1600;
+  max-width: 1600px;
   margin: 0 auto;
   background-image: linear-gradient(
       to right,
@@ -229,7 +228,7 @@ nav {
   letter-spacing: 0.06em;
   color: var(--adress-color);
   background-color: #2196f3;
-  transition: color 250ms linear, background 250ms linear;
+  transition: color 250ms linear, background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:focus,
 .button:hover {
@@ -293,7 +292,7 @@ nav {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-  transform: fill 250ms linear;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mini-list {
   display: flex;
@@ -310,7 +309,7 @@ nav {
   justify-content: center;
   display: flex;
   align-items: center;
-  transition: background-color 250ms linear;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  
 }
 .mini-link:hover .icon {
@@ -468,7 +467,7 @@ text-transform: uppercase;
 /* clients-section*/
 .clients-icon {
   fill: #afb1b8;
-  transition:  fill 250ms linear;
+  transition:  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-section {
@@ -500,7 +499,7 @@ text-transform: uppercase;
   align-items: center;
   width: 170px;
   height: 92px;
-  transition: color 250ms linear, fill 250ms linear, border-color 250ms linear  ;
+  transition: border-color 250ms linear  ;
 }
 
 .clients-list:not(:last-child) {
@@ -542,7 +541,7 @@ h4 {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  transition: color 250ms linear;
+  transition: color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 .google-adres {
   color: var(--adress-color);
@@ -584,7 +583,7 @@ h4 {
   display: flex;
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
-  transition: color 250ms linear,  background-color 250ms linear;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-footer {
@@ -639,7 +638,7 @@ h4 {
   color: var(--title-color);
   border: none;
   background-color: #f5f4fa;
-  transition: color 250ms linear, background 250ms linear ;
+  transition: color 250ms linear, background 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .nav-button:focus,
